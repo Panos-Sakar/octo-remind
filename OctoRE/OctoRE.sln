@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoRE", "OctoRE\OctoRE.csproj", "{07E0AF97-5413-41B8-9076-33CF25ED2DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07E0AF97-5413-41B8-9076-33CF25ED2DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E0AF97-5413-41B8-9076-33CF25ED2DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E0AF97-5413-41B8-9076-33CF25ED2DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E0AF97-5413-41B8-9076-33CF25ED2DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F1D93E6-7E85-4F9F-ACCC-E0CD84178CBC}
+	EndGlobalSection
+EndGlobal
