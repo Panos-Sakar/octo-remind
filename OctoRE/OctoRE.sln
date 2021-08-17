@@ -3,55 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "OctoRE (Package)", "OctoRE\OctoRE (Package)\OctoRE (Package).wapproj", "{3018028C-AC27-4C42-9F60-0C7A885D3187}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoRE", "OctoRE\OctoRE\OctoRE.csproj", "{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctoRE", "OctoRE\OctoRE.csproj", "{8B6B977C-1826-4200-92D5-1D384A17989B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|arm64 = Debug|arm64
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|arm64 = Release|arm64
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|arm64.ActiveCfg = Debug|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|arm64.Build.0 = Debug|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|arm64.Deploy.0 = Debug|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x64.ActiveCfg = Debug|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x64.Build.0 = Debug|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x64.Deploy.0 = Debug|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x86.ActiveCfg = Debug|x86
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x86.Build.0 = Debug|x86
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Debug|x86.Deploy.0 = Debug|x86
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|arm64.ActiveCfg = Release|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|arm64.Build.0 = Release|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|arm64.Deploy.0 = Release|arm64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x64.ActiveCfg = Release|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x64.Build.0 = Release|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x64.Deploy.0 = Release|x64
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x86.ActiveCfg = Release|x86
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x86.Build.0 = Release|x86
-		{3018028C-AC27-4C42-9F60-0C7A885D3187}.Release|x86.Deploy.0 = Release|x86
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|arm64.ActiveCfg = Debug|arm64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|arm64.Build.0 = Debug|arm64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|x64.ActiveCfg = Debug|x64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|x64.Build.0 = Debug|x64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|x86.ActiveCfg = Debug|x86
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Debug|x86.Build.0 = Debug|x86
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|arm64.ActiveCfg = Release|arm64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|arm64.Build.0 = Release|arm64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|x64.ActiveCfg = Release|x64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|x64.Build.0 = Release|x64
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|x86.ActiveCfg = Release|x86
-		{BA4DCFC6-21FE-4F26-BF15-34412B089B0E}.Release|x86.Build.0 = Release|x86
+		{8B6B977C-1826-4200-92D5-1D384A17989B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6B977C-1826-4200-92D5-1D384A17989B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6B977C-1826-4200-92D5-1D384A17989B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6B977C-1826-4200-92D5-1D384A17989B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6297F04F-D7A6-4EB6-A609-ECA017B26A7E}
+		SolutionGuid = {B67CA525-EAD1-4CC8-8795-487DDC5BD97C}
 	EndGlobalSection
 EndGlobal
