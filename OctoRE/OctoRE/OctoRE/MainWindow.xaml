@@ -7,14 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <NavigationView x:Name="OctoRE">
+    <NavigationView x:Name="OctoRE"
+                    Header="OctoRE"
+                    Loaded="NavigationView_Loaded"
+                    SelectionChanged="NavigationView_SelectionChanged">
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="Play" Content="Remind" Tag="Remind" />
-                <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-            <NavigationViewItem Icon="Refresh" Content="Rec" Tag="Rec" />
-            <NavigationViewItem Icon="Download" Content="Save" Tag="Save" />
+            <NavigationViewItem Icon="Play" Content="Remind" Tag="Views.MainView" />
+            <NavigationViewItem Icon="Refresh" Content="Rec" Tag="Views.MainView" />
+            <Button x:Name="myButton" Click="MyButton_Click">Click Me</Button>
+            <NavigationViewItem Icon="Download" Content="Save" Tag="Views.MainView" />
+            <NavigationViewItem Content="Optionals"
+                    Tag="Navigation.Optionals"
+                    ToolTipService.ToolTip="Optionals">
+                <NavigationViewItem.MenuItems>
+                    <NavigationViewItem Content="PageOne"
+                            Tag="Navigation.Optionals.PageOne"
+                            ToolTipService.ToolTip="PageOne" />
+                    <NavigationViewItem Content="PageTwo"
+                            Tag="Navigation.Optionals.PageTwo"
+                            ToolTipService.ToolTip="PageTwo" />
+                </NavigationViewItem.MenuItems>
+            </NavigationViewItem>
         </NavigationView.MenuItems>
-        <Frame x:Name="contentFrame"/>
+        <Frame x:Name="ContentFrame"/>
         <!-- -->
     </NavigationView>
 </Window>
