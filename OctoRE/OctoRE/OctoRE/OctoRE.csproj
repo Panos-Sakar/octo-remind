@@ -16,4 +16,6 @@
     <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.2" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
+
+
 </Project>
