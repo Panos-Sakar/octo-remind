@@ -1,6 +1,6 @@
 ﻿namespace OctoRE.Core.Models
 {
-    public class ReminderBase
+    public class ReminderBase : REObject
     {
         private readonly int _interval;
         private int _elapsed;
