@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Assets\Icons\" />
+    <Folder Include="Assets\Fonts\" />
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
