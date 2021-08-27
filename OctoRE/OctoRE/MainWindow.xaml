@@ -4,12 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OctoRE"
+        xmlns:viewModel="clr-namespace:OctoRE.Core.ViewModels;assembly=OctoRE.Core"
         mc:Ignorable="d"
         Height="650" Width="1200"
         Background="{StaticResource PrimeBackgroundBrush}"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -21,7 +26,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.ColumnSpan="2" 
+        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
                 Background="{StaticResource PrimaryTitleBackgroundBrush}"
                 MouseDown="OnBorderMouseDown">
             
@@ -29,15 +34,32 @@
                 <Label Content="{StaticResource AppTitle}" Style="{StaticResource TitleStyle}"/>
                 
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                    <Button Content="_" Style="{StaticResource TitleBarButton}" Margin="0,0,0,3"
+                    <Button Content="_" Style="{StaticResource TitleBarButton}" 
                             Click="OnMinimizePressed"/>
                     <Button Content="⨉" Style="{StaticResource TitleBarButton}"
                             Click="OnClosePressed"/>
-                    
                 </StackPanel>
             </Grid>
 
-
         </Border>
+        
+        <Grid Grid.Row="1" Grid.Column="0" 
+              Style="{StaticResource SidebarStyle}">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="50"/>
+                <RowDefinition/>
+                <RowDefinition Height = "60"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column ="0"
+                   Style="{StaticResource SidebarLabelStyle}"
+                   Content="Apps"/>
+            
+            <ListView Grid.Row="1"  Grid.Column ="0" 
+                      Style="{StaticResource SidebarItemContainerStyle}"
+                      ItemsSource="{Binding SidebarItems}"
+                      ItemContainerStyle="{StaticResource SideBarItemStyle}"/>
+        </Grid>
     </Grid>
 </Window>

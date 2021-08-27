@@ -13,4 +13,8 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OctoRE.Core\OctoRE.Core.csproj" />
+  </ItemGroup>
+
 </Project>

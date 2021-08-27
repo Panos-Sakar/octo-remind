@@ -4,14 +4,15 @@
     <!-- Colors -->
     <Color x:Key="PrimeBackground">#36393f</Color>
     <Color x:Key="PrimaryTitleBackground">#262626</Color>
-    <Color x:Key="TitleColor">gray</Color>
-    
-    <!-- Brushes -->
-    <SolidColorBrush x:Key="PrimeBackgroundBrush" Color="{StaticResource PrimeBackground}"/>
+    <Color x:Key="TitleTextColor">gray</Color>
+    <Color x:Key="PrimarySideBarBackground">#2f3136</Color>
+    <Color x:Key="SidebarItemBackgroundSelected">#292b2f</Color>
+    <Color x:Key="SidebarItemBackground">#393840</Color>
+
+<!-- Title -->
     <SolidColorBrush x:Key="PrimaryTitleBackgroundBrush" Color="{StaticResource PrimaryTitleBackground}"/>
-    <SolidColorBrush x:Key="TitleColorBrush" Color="{StaticResource TitleColor}"/>
-    
-    <!-- Styles -->
+    <SolidColorBrush x:Key="TitleColorBrush" Color="{StaticResource TitleTextColor}"/>
+
     <Style x:Key="TitleStyle" TargetType="Label">
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="FontSize" Value="20"/>
@@ -19,14 +20,42 @@
     </Style>
 
     <Style x:Key="TitleBarButton" TargetType="Button">
-        <Setter Property="Width" Value="40"/>
-        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="35"/>
+        <Setter Property="Height" Value="35"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Foreground" Value="{StaticResource TitleColorBrush}"/>
         <Setter Property="FontSize" Value="20"/>
+    </Style>
+
+    <!-- Sidebar -->
+    <SolidColorBrush x:Key="PrimarySideBarBackgroundBrush" Color="{StaticResource PrimarySideBarBackground}"/>
+    <SolidColorBrush x:Key="SidebarItemBackgroundSelectedBrush" Color="{StaticResource SidebarItemBackgroundSelected}"/>
+    <SolidColorBrush x:Key="SidebarItemBackgroundBrush" Color="{StaticResource SidebarItemBackground}"/>
+
+    <Style x:Key="SidebarStyle" TargetType="Grid">
+        <Setter Property="Background" Value="{StaticResource PrimarySideBarBackgroundBrush}"/>
+    </Style>
+
+    <Style x:Key="SidebarLabelStyle" TargetType="Label">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Foreground" Value="{StaticResource TitleColorBrush}"/>
+        <Setter Property="Margin" Value="8,0,0,0"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style x:Key="SidebarItemContainerStyle" TargetType="ListView">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
 
     </Style>
+
+    <!-- Body -->
+    <SolidColorBrush x:Key="PrimeBackgroundBrush" Color="{StaticResource PrimeBackground}"/>
+
 </ResourceDictionary>

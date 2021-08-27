@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
 
 namespace OctoRE
@@ -14,7 +13,7 @@ namespace OctoRE
             InitializeComponent();
         }
 
-        private void OnBorderMouseDown(Object sender, MouseButtonEventArgs e)
+        private void OnBorderMouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
@@ -22,12 +21,13 @@ namespace OctoRE
             }
         }
 
-        private void OnMinimizePressed(Object sender, RoutedEventArgs e)
+        private void OnMinimizePressed(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+            if (Application.Current.MainWindow != null)
+                Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
-        private void OnClosePressed(Object sender, RoutedEventArgs e)
+        private void OnClosePressed(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }

@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
+using System.Drawing;
+using OctoRE.Core.Models;
 
 namespace OctoRE.Core.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
+        public ObservableCollection<SidebarItemModel> SidebarItems { get; set; }
+
+        public MainViewModel()
+        {
+            SidebarItems = new ObservableCollection<SidebarItemModel>
+            {
+                new SidebarItemModel("Reminders", "00:00:00", Color.DeepPink),
+                new SidebarItemModel("ToDos", "00:00:00", Color.Aquamarine)
+            };
+        }
     }
 }
