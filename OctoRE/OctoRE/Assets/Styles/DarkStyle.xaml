@@ -3,7 +3,30 @@
     
     <!-- Colors -->
     <Color x:Key="PrimeBackground">#36393f</Color>
+    <Color x:Key="PrimaryTitleBackground">#262626</Color>
+    <Color x:Key="TitleColor">gray</Color>
     
     <!-- Brushes -->
     <SolidColorBrush x:Key="PrimeBackgroundBrush" Color="{StaticResource PrimeBackground}"/>
+    <SolidColorBrush x:Key="PrimaryTitleBackgroundBrush" Color="{StaticResource PrimaryTitleBackground}"/>
+    <SolidColorBrush x:Key="TitleColorBrush" Color="{StaticResource TitleColor}"/>
+    
+    <!-- Styles -->
+    <Style x:Key="TitleStyle" TargetType="Label">
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Foreground" Value="{StaticResource TitleColorBrush}"/>
+    </Style>
+
+    <Style x:Key="TitleBarButton" TargetType="Button">
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{StaticResource TitleColorBrush}"/>
+        <Setter Property="FontSize" Value="20"/>
+
+    </Style>
 </ResourceDictionary>
