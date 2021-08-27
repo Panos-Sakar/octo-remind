@@ -8,27 +8,47 @@ namespace OctoRE.Core.User
     {
         public async Task<T> Create(T entity)
         {
-            throw new NotImplementedException();
+            T task = await Wha();
+            return task;
         }
 
         public async Task<bool> Delete(int id)
         {
-            throw new NotImplementedException();
+            await Wha();
+            return true;
         }
 
         public async Task<T> Get(int id)
         {
-            throw new NotImplementedException();
+            T task = await Wha();
+            return task;
         }
 
         public async Task<IEnumerable<T>> GetAll()
         {
-            throw new NotImplementedException();
+            await Wha();
+            return null;
         }
 
         public async Task<T> Update(int id, T entity)
         {
-            throw new NotImplementedException();
+            T task = await Wha();
+            return task;
+        }
+
+        private static async Task<T> Wha()
+        {
+            var wha = 0;
+            for (var index = 0; index <= 25; index++)
+            {
+                wha++;
+                if (wha%5 == 0)
+                {
+                    await Task.Delay(10);
+                }
+            }
+
+            return null;
         }
     }
 }
