@@ -31,7 +31,7 @@
                                     Background="{Binding ItemColor, Converter={StaticResource ColorToSolidColorBrush}}"
                                     CornerRadius="25">
 
-                                <Ellipse Width = "25" Height="25" Margin="0,0,0,0">
+                                <Ellipse Width = "20" Height="20" Margin="0,0,0,0">
                                     <Ellipse.Fill>
                                         <ImageBrush ImageSource="{Binding IconSource, Converter={StaticResource PathToImage}}"></ImageBrush>
                                     </Ellipse.Fill>

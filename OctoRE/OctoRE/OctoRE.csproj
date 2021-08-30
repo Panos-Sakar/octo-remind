@@ -8,11 +8,17 @@
 
   <ItemGroup>
     <None Remove="alarm-90.png" />
-    <None Remove="Assets\Icons\alarm-90.png" />
+    <None Remove="Assets\Icons\alarm-black.png" />
+    <None Remove="Assets\Icons\alarm.png" />
+    <None Remove="Assets\Icons\gear-black.png" />
+    <None Remove="Assets\Icons\gear.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Icons\alarm-90.png">
+    <Resource Include="Assets\Icons\alarm-black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Icons\alarm.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
@@ -29,6 +35,12 @@
 
   <ItemGroup>
     <Resource Include="alarm-90.png" />
+    <Resource Include="Assets\Icons\gear-black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Icons\gear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

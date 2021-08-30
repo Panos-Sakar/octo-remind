@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
+using OctoRE.Core;
 
 namespace OctoRE.Converters
 {
@@ -9,10 +10,10 @@ namespace OctoRE.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            string imagePath = "pack://OctoRE:,,,/Assets/Icons/alarm-90.png";
+            string imagePath = ResourceManager.GetDefaultIconPath();
             if (value != null)
             {
-                imagePath = $"pack://application:,,,{value}";
+                imagePath = $"{value}";
             }
 
             BitmapImage image = new BitmapImage();

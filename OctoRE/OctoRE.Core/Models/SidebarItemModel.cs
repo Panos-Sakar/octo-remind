@@ -4,7 +4,7 @@ namespace OctoRE.Core.Models
 {
     public class SidebarItemModel
     {
-        private const string ResourcePrefix = "/Assets/Icons/";
+        
         public string ItemName { get; set; }
         public string Subtext { get; set; }
         public Color ItemColor { get; set; }
@@ -16,7 +16,7 @@ namespace OctoRE.Core.Models
             ItemName = itemName;
             Subtext = subtext;
             ItemColor = itemColor;
-            IconSource = $"{ResourcePrefix}{iconSource}";
+            IconSource = ResourceManager.GetIconUriPath(iconSource);
         }
     }
 }

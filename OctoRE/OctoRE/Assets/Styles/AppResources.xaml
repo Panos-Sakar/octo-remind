@@ -7,6 +7,5 @@
     
     <converters:ColorToSolidColorBrushConverter x:Key="ColorToSolidColorBrush"/>
     <converters:PathToImageConverter x:Key="PathToImage"/>
-    <converters:SwitchConverter x:Key="SwitchImage"/>
 
 </ResourceDictionary>

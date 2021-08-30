@@ -15,11 +15,11 @@ namespace OctoRE.Core.ViewModels
         {
             SidebarItems = new ObservableCollection<SidebarItemModel>
             {
-                new SidebarItemModel("Reminders", "00:00:00", Color.DeepPink, "alarm-90.png"),
-                new SidebarItemModel("ToDos", "00", Color.Aquamarine, "alarm-90.png")
+                new SidebarItemModel("Reminders", "00:00:00", Color.DeepPink, "alarm-black"),
+                new SidebarItemModel("ToDos", "00", Color.Aquamarine, "alarm-black")
             };
 
-            GearIcon = "/Assets/Icons/alarm-90.png";
+            GearIcon = ResourceManager.GetIconUriPath(RegisteredIcons.GearBlack);
         }
     }
 }

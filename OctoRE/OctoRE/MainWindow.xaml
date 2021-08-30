@@ -112,7 +112,7 @@
                                 HorizontalAlignment="Right">
                         <Image Width="20" Height="20"
                                Margin="5,0,5,0"
-                               Source="/Assets/Icons/alarm-90.png"></Image>
+                               Source="/Assets/Icons/alarm.png"></Image>
 
                     </StackPanel>
                 </Grid>
