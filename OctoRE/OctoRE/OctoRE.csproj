@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\Icons\" />
+    <None Remove="alarm-90.png" />
+    <None Remove="Assets\Icons\alarm-90.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Icons\alarm-90.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Assets\Fonts\" />
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
@@ -15,6 +25,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OctoRE.Core\OctoRE.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="alarm-90.png" />
   </ItemGroup>
 
 </Project>

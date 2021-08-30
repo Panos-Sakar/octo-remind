@@ -31,5 +31,15 @@ namespace OctoRE
         {
             Application.Current.Shutdown();
         }
+
+        private void ListView_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void MouseOverReminders(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            var test = 6;
+        }
     }
 }

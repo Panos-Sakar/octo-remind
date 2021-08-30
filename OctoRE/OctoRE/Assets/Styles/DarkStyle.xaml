@@ -42,6 +42,7 @@
     <Style x:Key="SidebarLabelStyle" TargetType="Label">
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="FontSize" Value="15"></Setter>
         <Setter Property="Foreground" Value="{StaticResource TitleColorBrush}"/>
         <Setter Property="Margin" Value="8,0,0,0"/>
         <Setter Property="Height" Value="50"/>
