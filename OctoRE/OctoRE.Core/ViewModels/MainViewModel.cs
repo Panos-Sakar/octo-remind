@@ -15,8 +15,8 @@ namespace OctoRE.Core.ViewModels
         {
             SidebarItems = new ObservableCollection<SidebarItemModel>
             {
-                new SidebarItemModel("Reminders", "00:00:00", Color.DeepPink, "alarm-black"),
-                new SidebarItemModel("ToDos", "00", Color.Aquamarine, "alarm-black")
+                new SidebarItemModel("Reminders", "00:00:00", Color.DeepPink, "alarm-black.png"),
+                new SidebarItemModel("ToDos", "00", Color.Aquamarine, "alarm-black.png")
             };
 
             GearIcon = ResourceManager.GetIconUriPath(RegisteredIcons.GearBlack);

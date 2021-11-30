@@ -1,43 +1,41 @@
-﻿using System;
-
-namespace OctoRE.Core
+﻿namespace OctoRE.Core
 {
     public static class ResourceManager
     {
         private const string ResourcePack = "pack://application:,,,";
         private const string IconsFolderPrefix = "/Assets/Icons/";
+
+        public static string GetPackedPath(string path)
+        {
+            return $"{ResourcePack}{path}";
+        }
+
         public static string GetDefaultIconPath()
         {
-            return $"{ResourcePack}{IconsFolderPrefix}gear.png";
+            return GetPackedPath($"{IconsFolderPrefix}gear.png");
         }
 
         public static string GetIconUriPath(string iconName)
         {
-            return $"{ResourcePack}{IconsFolderPrefix}{iconName}.png";
+            return $"{IconsFolderPrefix}{iconName}";
         }
 
         public static string GetIconUriPath(RegisteredIcons icon)
         {
-            return $"{ResourcePack}{IconsFolderPrefix}{GetRegisteredIconName(icon)}.png";
+            return $"{IconsFolderPrefix}{GetRegisteredIconName(icon)}";
         }
 
         private static string GetRegisteredIconName(RegisteredIcons icon)
         {
-            switch (icon)
+            return icon switch
             {
-                case RegisteredIcons.Default:
-                    return "gear";
-                case RegisteredIcons.Alarm:
-                    return "alarm";
-                case RegisteredIcons.AlarmBlack:
-                    return "alarm-black";
-                case RegisteredIcons.Gear:
-                    return "gear";
-                case RegisteredIcons.GearBlack:
-                    return "gear-black";
-                default:
-                    return "";
-            }
+                RegisteredIcons.Default => "gear.png",
+                RegisteredIcons.Alarm => "alarm.png",
+                RegisteredIcons.AlarmBlack => "alarm-black.png",
+                RegisteredIcons.Gear => "gear.png",
+                RegisteredIcons.GearBlack => "gear-black.png",
+                _ => ""
+            };
         }
     }
 

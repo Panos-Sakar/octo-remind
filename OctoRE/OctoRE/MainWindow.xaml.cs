@@ -36,10 +36,5 @@ namespace OctoRE
         {
 
         }
-
-        private void MouseOverReminders(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            var test = 6;
-        }
     }
 }

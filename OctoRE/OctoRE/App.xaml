@@ -9,6 +9,7 @@
                 <ResourceDictionary Source="/Assets/Styles/DarkStyle.xaml"/>
                 <ResourceDictionary Source="/Assets/Styles/AppResources.xaml"/>
                 <ResourceDictionary Source="/Assets/Styles/SidebarItem.xaml"/>
+                <ResourceDictionary Source="/Assets/Styles/Scrollbar.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -13,7 +13,7 @@ namespace OctoRE.Converters
             string imagePath = ResourceManager.GetDefaultIconPath();
             if (value != null)
             {
-                imagePath = $"{value}";
+                imagePath = $"{ResourceManager.GetPackedPath(value.ToString())}";
             }
 
             BitmapImage image = new BitmapImage();

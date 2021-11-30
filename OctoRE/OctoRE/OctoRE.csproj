@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="alarm-90.png" />
     <None Remove="Assets\Icons\alarm-black.png" />
     <None Remove="Assets\Icons\alarm.png" />
     <None Remove="Assets\Icons\gear-black.png" />
@@ -34,7 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="alarm-90.png" />
     <Resource Include="Assets\Icons\gear-black.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
